@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Havenwear - Gen Z Street Style</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo" aria-label="Havenwear logo">
+      <svg width="50" height="50" viewBox="0 0 64 64" aria-hidden="true" focusable="false" class="logo-svg">
+        <circle cx="32" cy="32" r="30" fill="#ff6f91" />
+        <text x="32" y="42" text-anchor="middle" font-family="Verdana" font-size="28" fill="#fff" font-weight="bold">HW</text>
+      </svg>
+      <h1>Havenwear</h1>
+    </div>
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="#about" tabindex="0">About</a></li>
+        <li><a href="#collection" tabindex="0">Collection</a></li>
+        <li><a href="#join" tabindex="0">Join Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" tabindex="0">
+      <h2>Welcome to Havenwear</h2>
+      <p>Streetwear designed for bold Gen Z vibes. Be unique, be yourself.</p>
+    </section>
+
+    <section id="collection" tabindex="0" class="grid-container">
+      <article class="grid-item">
+        <img src="C:\Users\moham\Downloads\download.webp" alt="Vibrant Graphic Hoodie" class="product-img" />
+        <h3>Vibrant Graphic Hoodie</h3>
+        <p>Pop colors and bold prints to stand out.</p>
+      </article>
+      <article class="grid-item">
+        <img src="C:\Users\moham\Downloads\download (1).webp"alt="Oversized Cargo Pants" class="product-img" />
+        <h3>Oversized Cargo Pants</h3>
+        <p>Comfort meets style in every pocket.</p>
+      </article>
+      <article class="grid-item">
+        <img src="C:\Users\moham\Downloads\download (2).jpg" alt="Minimalist Logo Tee" class="product-img" />
+        <h3>Minimalist Logo Tee</h3>
+        <p>Simple yet unforgettable look.</p>
+      </article>
+    </section>
+
+    <section id="join" tabindex="0" aria-labelledby="form-title">
+      <h2 id="form-title">Join the Havenwear Squad</h2>
+      <form action="#" method="POST" aria-describedby="form-desc">
+        <p id="form-desc">Sign up for early drops and exclusive offers.</p>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your name" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com" />
+
+        <fieldset>
+          <legend>Interested in</legend>
+          <label class="checkbox-container">Hoodies
+            <input type="checkbox" name="interest" value="hoodies" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container">Cargo Pants
+            <input type="checkbox" name="interest" value="pants" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container">Tees
+            <input type="checkbox" name="interest" value="tees" />
+            <span class="checkmark"></span>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Choose your plan</legend>
+          <label class="radio-container">Monthly
+            <input type="radio" name="plan" value="monthly" required />
+            <span class="radiomark"></span>
+          </label>
+          <label class="radio-container">Seasonal Drop
+            <input type="radio" name="plan" value="seasonal" />
+            <span class="radiomark"></span>
+          </label>
+        </fieldset>
+
+        <label for="region">Region</label>
+        <select id="region" name="region" required>
+          <option value="" disabled selected>Select your region</option>
+          <option value="na">North America</option>
+          <option value="eu">Europe</option>
+          <option value="asia">Asia</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="comments">Tell us more</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Got ideas or feedback?"></textarea>
+
+        <button type="submit">Join Now</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Havenwear</p>
+  </footer>
+
+</body>
+</html>
